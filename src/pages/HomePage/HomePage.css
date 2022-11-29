@@ -1,0 +1,27 @@
+.HomePage {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr;
+  height: 93vh;
+  width: 100%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--green);
+  color: #F5F5F5;
+}
+
+#about > h1 {
+  font-size: 45px;
+}
+
+#splash {
+  background-image: url("../../img/splash.jpg");
+  background-size: cover;
+}

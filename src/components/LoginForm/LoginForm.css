@@ -1,0 +1,8 @@
+.LoginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../img/login.jpg);
+  background-size: cover;
+  height: 92.5vh;
+}

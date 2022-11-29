@@ -1,0 +1,15 @@
+.Logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.7vmin;
+  font-weight: bold;
+  width: 21vmin;
+  color: white;
+}
+
+.Logo > img {
+  height: 6vmin;
+  width: 6vmin;
+  fill: white;
+}

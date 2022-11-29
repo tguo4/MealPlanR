@@ -1,0 +1,60 @@
+.MealPlannerTable {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  table-layout: fixed;
+  width: 90vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr th {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 26px 8px;
+
+}
+
+tbody tr th {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+th,
+td {
+  padding: 6px 8px;
+  /* word-wrap: break-word; */
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 2px solid #009879
+}
+
+tbody tr {
+  height: 100px;
+}
+
+tbody td:hover {
+  background-color: #7EA16B;
+  color: white;
+  text-decoration: underline;
+}
+
+span {
+  font-style: italic;
+  font-weight: normal;
+  font-size: .8em;
+}
+
+.empty {
+  border: none;
+}

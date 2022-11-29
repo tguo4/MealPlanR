@@ -1,0 +1,138 @@
+.SavedRecipeDetailPage {
+  height: 100vh;
+  margin: 5vmin 10vmin;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1.4fr 10% 14% 10% 10% auto;
+  grid-template-areas:
+    " title image"
+    " source image"
+    " stats image"
+    "btn image"
+    "row-border row-border"
+    "ingredients directions";
+}
+
+.title {
+  grid-area: title;
+  justify-self: center;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+.source {
+  grid-area: source;
+  align-self: center;
+  font-size: 14pt;
+  font-style: oblique;
+}
+
+.image {
+  grid-area: image;
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
+.btn {
+  grid-area: btn;
+  justify-self: center;
+  align-self: flex-end;
+  padding: 1vmin 3vmin;
+  color: var(--white);
+  font-size: 2.5vmin;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: .1vmin solid var(--tan-2);
+  border-radius: .5vmin;
+  outline: none;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: var(--green);
+}
+
+.red {
+  background-color: #BC2C1A;
+}
+
+.row-border {
+  grid-area: row-border;
+  border-bottom: 2px solid gray;
+  align-self: center;
+}
+
+.directions-btn {
+  grid-area: save-btn;
+  padding: 1vmin 3vmin;
+  color: var(--white);
+  background-color: gray;
+  font-size: 2.5vmin;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: .1vmin solid var(--tan-2);
+  border-radius: .5vmin;
+  outline: none;
+  cursor: pointer;
+}
+
+.directions-btn:hover {
+  background-color: var(--green);
+}
+
+.directions > span {
+  font-style: oblique;
+  font-size: 14pt;
+}
+
+.stats {
+  grid-area: stats;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16pt;
+  justify-self: center;
+}
+
+.stats > div {
+  padding: 0px 8px;
+}
+
+.servings {
+  border-left: 1.5px solid gray;
+  border-right: 1.5px solid gray;
+}
+
+.ingredients {
+  grid-area: ingredients;
+  padding-left: 8vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 14pt;
+}
+
+.list {
+  padding-left: 2vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 90vh;
+}
+
+.list > li {
+  margin-bottom: 1vmin;
+}
+
+.directions {
+  grid-area: directions;
+  justify-self: center;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 18pt;
+}
