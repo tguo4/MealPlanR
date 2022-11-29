@@ -5,6 +5,11 @@ import edamam from '../../img/edamam-logo.svg';
 
 export default function RecipeDetailPage({ user, setUser, detailedRecipe, handleSave, hasBeenSaved }) {
   const [saved, setSaved] = useState(false);
+  const [showMealForm, setShowMealForm] = useState(false);
+
+  function toggleForm() {
+    setShowMealForm(!showMealForm);
+  }
 
   useEffect(function() {
     async function checkIfSaved() {
@@ -55,6 +60,30 @@ export default function RecipeDetailPage({ user, setUser, detailedRecipe, handle
           }
 
           <button className="btn">Add to Meal Plan</button>
+          <button onClick={toggleForm} className="btn">Add to Meal Plan</button>
+          {showMealForm &&
+            <form className="meal-form">
+              <label for="day">Chose a Day:</label>
+              <select name="day" id="day">
+                <option value="volvo">Monday</option>
+                <option value="saab">Tuesday</option>
+                <option value="opel">Wednesday</option>
+                <option value="audi">Thursday</option>
+                <option value="audi">Thursday</option>
+                <option value="audi">Friday</option>
+                <option value="audi">Saturday</option>
+                <option value="audi">Sunday</option>
+              </select>
+              <label for="type">Chose Meal Type:</label>
+              <select name="type" id="type">
+                <option value="volvo">Breakfast</option>
+                <option value="saab">Lunch</option>
+                <option value="opel">Dinner</option>
+              </select>
+              <button type="submit">ADD</button>
+            </form>
+
+          }
 
         </div>
         <div className="row-border"></div>
